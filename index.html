@@ -7,48 +7,83 @@
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <style type="text/css">
 
-        html, body {
-            width: 100%;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-pack: center;
-            align-items: center;
-            -ms-flex-align: center;
-            justify-content: center;
-            flex-direction: column;
-            -ms-flex-direction: column;
-            background: #4887bb;
-            font-family: 'Lora', serif;
-        }
+      html, body {
+        width: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        align-items: center;
+        -ms-flex-align: center;
+        justify-content: center;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        background: #4887bb;
+        font-family: 'Lora', serif;
+      }
 
+      .box {
+        max-width: 800px;
+        color: #111;
+        background: #f0f0f0;
+        padding: 20px 80px 40px 80px;
+        text-align: center;
+        border-radius: 4px;
+        border: 1px solid transparent;
+      }
+      @media (max-width: 450px) {
         .box {
-            max-width: 800px;
-            color: #111;
-            background: #f0f0f0;
-            padding: 20px 80px 40px 80px;
-            text-align: center;
-            border-radius: 4px;
-            border: 1px solid transparent;
+          padding: 20px 40px 40px 40px;
         }
-        @media (max-width: 450px) {
-            .box {
-                padding: 20px 40px 40px 40px;
-            }
-        }
-        a {
-            color: #0c60ab;
-        }
-        .about {
-            color: #79848f;
-        }
-        hr {
-            width: 50%;
-            border-top: 1px solid #79848f;
-        }
+      }
+      a {
+        color: #0c60ab;
+      }
+      .about {
+        color: #79848f;
+      }
+      hr {
+        width: 50%;
+        border-top: 1px solid #79848f;
+      }
       svg.icon {
         padding: 0 10px;
         height: 2em;
         width: 2em;
+      }
+      .btn {
+        font-family: inherit;
+        font-size: inherit;
+        background: #42c28e;
+        cursor: pointer;
+        padding: 25px 80px;
+        display: inline-block;
+        margin: 15px 30px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-weight: 700;
+        outline: none;
+        position: relative;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        border: 3px solid #fff;
+        border-radius: 4px;
+        color: #fff;
+      }
+
+      .btn:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+
+      .btn:hover, .btn:active {
+        color: #fff;
+        background: #24af77;
       }
     </style>
     <!--[if lt IE 10]><style>.box { width: 300px; margin: 30px auto; }</style><![endif]-->
@@ -88,6 +123,8 @@
                     <path fill="#555" d="M248.082,262.307c7.854,0,14.223-6.369,14.223-14.225V18.812 c0-7.857-6.368-14.224-14.223-14.224H18.812c-7.857,0-14.224,6.367-14.224,14.224v229.27c0,7.855,6.366,14.225,14.224,14.225 H248.082z"/>
                     <path fill="#f0f0f0" d="M182.409,262.307v-99.803h33.499l5.016-38.895h-38.515V98.777c0-11.261,3.127-18.935,19.275-18.935 l20.596-0.009V45.045c-3.562-0.474-15.788-1.533-30.012-1.533c-29.695,0-50.025,18.126-50.025,51.413v28.684h-33.585v38.895h33.585 v99.803H182.409z"/>
                 </svg></a>
+        <hr>
+        <a href="https://go.booker.com/#/location/WatersideDaySpaSalon/services/106/eyelashes" class="btn">Book Online</a>
         <hr>
         <br>
         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsteamboatlashes&tabs=timeline%2Cmessages&width=340&height=800&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
